@@ -1,6 +1,6 @@
 {
-  "extends": ["eslint-config-typescript"],
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  }
+   "extends": ["eslint-config-typescript", "prettier"],
+   "parserOptions": {
+      "project": "./tsconfig.json"
+   }
 }
