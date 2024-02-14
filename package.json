@@ -8,6 +8,13 @@
     "test:staged": "jest",
     "prepare": "husky"
   },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknow",
+    "*.ts": [
+      "eslint 'src/**' --fix",
+      "npm run test:staged"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -25,9 +32,7 @@
     "lint-staged": "^15.2.2",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
-  },
-  "dependencies": {
+    "typescript": "^5.3.3",
     "eslint-config-prettier": "^9.1.0"
   }
 }
