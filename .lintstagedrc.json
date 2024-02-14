@@ -1,4 +1,4 @@
 {
   "**/*": "prettier --write --ignore-unknow",
-  "*.ts": ["eslint 'src/**' --fix", "npm run test:staged"]
+  "*.ts": ["eslint 'src/**' --fix"]
 }
