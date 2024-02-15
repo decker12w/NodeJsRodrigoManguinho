@@ -1,6 +1,7 @@
 {
   "extends": ["eslint-config-typescript", "prettier"],
   "parserOptions": {
+    "ecmaVersion": "latest",
     "project": "./tsconfig.json"
   },
   "rules": {
